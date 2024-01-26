@@ -1,6 +1,6 @@
 basic.forever(function () {
-    for (let index = 0; index < 6; index++) {
-        basic.pause(500)
+    for (let index = 0; index < 4; index++) {
+        basic.pause(1000)
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -8,7 +8,7 @@ basic.forever(function () {
             . . . . .
             . . . . .
             `)
-        basic.pause(2000)
+        basic.pause(1000)
         basic.showLeds(`
             . . . . .
             . . # . .
@@ -16,7 +16,7 @@ basic.forever(function () {
             . . # . .
             . . . . .
             `)
-        basic.pause(2000)
+        basic.pause(1000)
         basic.showLeds(`
             . . # . .
             . # . # .
@@ -24,14 +24,15 @@ basic.forever(function () {
             . # . # .
             . . # . .
             `)
-        basic.pause(2000)
+        basic.pause(1500)
         basic.showLeds(`
-            . . . . .
-            . . # . .
-            . # . # .
-            . . # . .
-            . . . . .
+            . # # # .
+            # # . # #
+            # . . . #
+            # # . # #
+            . # # # .
             `)
+        basic.pause(500)
     }
     basic.pause(2000)
     basic.showString("R")
